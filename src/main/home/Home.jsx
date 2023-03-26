@@ -6,7 +6,7 @@ import Contact from '../contact/Contact'
 const Home = () => {
     return (
         <section className='bg-primary h-full'>
-            <Dashboard />te
+            <Dashboard />
             <About />
             <Contact />
         </section>
