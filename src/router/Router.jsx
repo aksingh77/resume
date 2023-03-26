@@ -13,11 +13,12 @@ const pageRoute = [
             path: '',
             element: <Home />
         },
-        {
-            path: '/resume',
-            element: <Resume />
-        }
+
         ]
+    },
+    {
+        path: '/resume',
+        element: <Resume />
     }
 ]
 export default pageRoute;

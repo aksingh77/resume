@@ -30,6 +30,7 @@ module.exports = {
         darkColor: "var(--dark-color)",
         mainTextColor: "var(--primary-text-color)",
         buttonColor: "var(--button-color)",
+        // goldenColor: "var(--primary-text-color)",
         goldenColor: "var(--golden-color)",
       },
     },

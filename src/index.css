@@ -55,13 +55,16 @@
 
 @layer base {
   body {
-    @apply font-primary text-lg leading-8 text-white;
+    @apply font-primary text-lg text-white;
   }
   .h2 {
     @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
   }
   .h4 {
     @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+  }
+  .heading {
+    @apply mb-4 after:absolute after:bg-goldenColor after:content-[''] after:bottom-[-5px] after:w-[40px] after:h-[2px] after:left-0;
   }
   .btn {
     @apply rounded-full font-primary text-white font-medium;
@@ -81,6 +84,9 @@
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
+}
+.progressBar {
+  width: 0;
 }
 .menuLinkStyle a.active {
   color: var(--button-color);

@@ -3,18 +3,18 @@ import LeftSideScreen from './resumeLeftSideScreen/LeftSideScreen'
 import RightSideScreen from './resumeRightSideScreen/RightSideScreen'
 const Resume = () => {
     return (
-        <section className=' bg-primary'>
-            <div className="resume container m-auto">
-                <div className="flex gap-7">
-                    <div className='w-[30%] bg-[#201e1b] h-full p-4 rounded-xl border border-goldenColor'>
+        <section className=' bg-primary h-full flex justify-center'>
+            <div className="resume container m-auto ">
+                <div className="flex gap-7 my-[40px]">
+                    <div className='w-[27%] h-[calc(100vh-40px)] bg-[#201e1b] p-4 rounded-xl shadow-[1px_1px_9px_#2e280e] sticky top-[40px] flex flex-col justify-center'>
                         <LeftSideScreen />
                     </div>
-                    <div className='w-[70%] bg-[#201e1b] h-full p-4 rounded-xl border border-goldenColor'>
+                    <div className='w-[73%] bg-[#201e1b] h-full p-4 rounded-xl shadow-[1px_1px_9px_#2e280e] '>
                         <RightSideScreen />
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 
