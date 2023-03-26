@@ -24,7 +24,7 @@ const Header = () => {
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                             </label>
                             <ul tabIndex={0} className={`${style.menuActive}menu menu-compact dropdown-content mt-3 p-2 shadow-xl rounded-box w-52 flex gap-3text-white text-sm tracking-[3px] uppercase backdrop-blur-xl`}>
-                                <li className={`${style.menuActive}`}><NavLink to="/">Home</NavLink></li>
+                                <li className={`${style.menuActive}`}><NavLink to="/resume">Home</NavLink></li>
                                 <li className={`${style.menuActive}`}><NavLink to="#about">About</NavLink></li>
                                 <li className={`${style.menuActive}`}><NavLink to="#contact">Contact</NavLink></li>
                             </ul>
@@ -34,9 +34,9 @@ const Header = () => {
                     <div className="menu menuLinkStyle navbar-end hidden lg:flex items-end">
                         <ul tabIndex={0} className="flex gap-3  text-white text-sm tracking-[3px] uppercase">
                             <li className={`${style.menuActive}`}>
-                                <Link activeClass="active" to="home" spy={true} smooth={true} offset={-200} duration={1000} >
+                                <NavLink to="/resume" >
                                     Home
-                                </Link>
+                                </NavLink>
                             </li>
                             <li className={`${style.menuActive}`} >  <Link activeClass="active" to="about" spy={true} smooth={true} offset={-200} duration={1000} >
                                 About
